@@ -57,7 +57,7 @@ class ClipDecorator extends ParentDecorator<ClipDecorator> {
         );
       } else {
         return ClipRRect(
-          borderRadius: borderRadius,
+          borderRadius: borderRadius ?? BorderRadius.circular(0),
           child: child,
         );
       }
